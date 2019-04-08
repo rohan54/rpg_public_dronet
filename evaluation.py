@@ -182,6 +182,8 @@ def _main():
     # Load json and create model
     json_model_path = os.path.join(FLAGS.experiment_rootdir, FLAGS.json_model_fname)
     model = utils.jsonToModel(json_model_path)
+    print("Hi")
+    print(model.summary())
 
     # Load weights
     weights_load_path = os.path.join(FLAGS.experiment_rootdir, FLAGS.weights_fname)
